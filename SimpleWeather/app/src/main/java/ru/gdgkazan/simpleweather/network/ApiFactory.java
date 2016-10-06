@@ -13,7 +13,7 @@ import ru.gdgkazan.simpleweather.BuildConfig;
  */
 public final class ApiFactory {
 
-    private static OkHttpClient sClient;
+    private static volatile OkHttpClient sClient;
 
     private static volatile WeatherService sService;
 
